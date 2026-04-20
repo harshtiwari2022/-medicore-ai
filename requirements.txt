@@ -1,0 +1,67 @@
+streamlit>=1.30.0
+pandas>=2.0.0
+pyttsx3>=2.90
+streamlit-mic-recorder>=0.0.7
+regex
+
+
+# MediCore AI v4.0 — Requirements & Setup Guide
+# ================================================
+
+# ── INSTALL ALL DEPENDENCIES ──────────────────────────────────
+# pip install -r requirements.txt
+
+streamlit>=1.32.0
+pandas>=2.0.0
+anthropic>=0.25.0
+pyttsx3>=2.90
+streamlit-mic-recorder>=0.0.4
+difflib2>=0.1.0
+
+# ── SETUP STEPS ───────────────────────────────────────────────
+# 1. Place these files in the SAME folder:
+#      medicore_v4.py
+#      dataset.csv        (Disease, Medicines, Yoga, Diet, Advice columns)
+#      doctorset.csv      (Doctor Name, Disease, Address, Contact, Fees columns)
+#
+# 2. Set your Anthropic API key:
+#    Windows:   set ANTHROPIC_API_KEY=your_key_here
+#    Mac/Linux: export ANTHROPIC_API_KEY=your_key_here
+#    Or create a .env file (use python-dotenv)
+#
+# 3. Run the app:
+#    streamlit run medicore_v4.py
+#
+# ── AUTO-CREATED FILES ────────────────────────────────────────
+# The app creates these automatically on first run:
+#   users.json              — Encrypted user accounts (SHA-256 passwords)
+#   appointments.json       — All appointment bookings
+#   doctor_reviews.csv      — Doctor review data
+#   medicine_reviews.csv    — Medicine review data
+#   shoperslist.csv         — Order history
+#   health_{username}.json  — Per-user health records (vitals, notes)
+#
+# ── DEMO USAGE ────────────────────────────────────────────────
+# 1. Open the app → click "Sign Up" tab
+# 2. Create a Patient account (no email needed)
+# 3. Create a Doctor account (optional, for appointment demo)
+# 4. Sign in and explore all 10 tabs
+#
+# ── NEW FEATURES IN v4.0 ─────────────────────────────────────
+# ✓ Authentication System  — Login/Signup with SHA-256 passwords
+#                            Roles: Patient, Doctor, Admin
+# ✓ AI Diagnosis           — Claude analyses symptoms → confidence scores
+#                            Follow-up questions + urgency levels
+# ✓ Appointment Booking    — Time slot grid, per-doctor scheduling
+#                            Confirm / cancel / reschedule
+# ✓ Health Dashboard       — BMI, Heart Rate, Blood Pressure tracking
+#                            History table, health notes
+# ✓ Advanced AI Chatbot    — Full patient context (vitals + profile)
+#                            Quick prompt buttons, clear history
+# ✓ Clean Light Theme      — White + Blue (#2563EB) + Green (#10B981)
+#                            Micro-interactions, hover animations
+#                            Skeleton-style loading states
+#
+# ── COLUMN REQUIREMENTS FOR CSV FILES ────────────────────────
+# dataset.csv:   Disease | Medicines | Yoga | Diet | Advice
+# doctorset.csv: Doctor Name | Disease | Address | Contact | Fees
