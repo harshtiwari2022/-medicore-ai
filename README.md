@@ -181,6 +181,4 @@ Pull requests are welcome!
 
 ## 📧 Contact
 
-**Amit Sharma**   
-📩 Email: Amitsharma97545@gmail.com  
-🐙 GitHub: https://github.com/AmitSharma9754/Personal-health-assistant
+
