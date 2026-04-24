@@ -1727,7 +1727,7 @@ Core guidelines:
             <div style="font-size:11px;color:#475569;margin-top:2px;">Enterprise Clinical Intelligence · Doctor & Medicine Recommendation · Review Mining</div>
           </div>
           <div style="text-align:right;">
-            <div style="font-size:13px;color:#64748B;">Developed by <span style="color:#2563EB;font-weight:700;">payal team</span></div>
+            <div style="font-size:13px;color:#64748B;">Developed by <span style="color:#2563EB;font-weight:700;">team</span></div>
             <div style="font-size:10px;color:#334155;margin-top:2px;font-family:'JetBrains Mono',monospace;">© 2024 MediCore AI v4.0</div>
           </div>
         </div>
